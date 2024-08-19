@@ -1,13 +1,16 @@
 # Object Detection and Tracking with Kalman Filter
 
-This Python script performs object detection and tracking using OpenCV. It detects squares and circles in video frames and tracks them using a Kalman Filter. The tracking results are saved to a file.
+This Python script performs object detection and tracking using OpenCV. It detects squares and circles in video frames and tracks them using a Kalman Filter. The tracking results are saved to a file for further analysis or evaluation.
 
-### Features
+## Features
 
-- **Object Detection**: Detects squares and circles in video frames.
-- **Object Tracking**: Tracks detected objects using a Kalman Filter.
-- **File Logging**: Saves object coordinates and tracking information to a text file.
-- **Visualization**: Displays detection and tracking results in real-time using OpenCV.
+- **Object Detection**: The script can detect squares and circles in video frames using contour detection and the Hough Circle Transform, respectively.
+- **Object Tracking**: Detected objects are tracked across frames using a Kalman Filter, ensuring smooth tracking even when objects temporarily disappear or overlap.
+- **File Logging**: All object coordinates and tracking information are logged to a text file, making it easier to review or analyze the tracking performance.
+- **Real-Time Visualization**: The script displays the detection and tracking results in real-time using OpenCV, showing bounding boxes and object IDs on the video.
+
+## Project Context
+This project was developed as part of a job interview task, where I had to demonstrate my ability to apply computer vision techniques to real-world scenarios. The entire project, including learning the necessary concepts, libraries and implementation, was completed within a 5-hour timeframe. Despite being new to some of the tools and techniques used, I successfully built a functional object detection and tracking system within the given time limit.
 
 ## Prerequisites
 
@@ -79,3 +82,18 @@ This function initializes the coordinates file and the object tracker. It then r
 - The Kalman Filter is used to predict and correct the positions of tracked objects based on their previous states.
 - The threshold values used for detection and tracking can be adjusted based on the specific requirements of your application.
 
+## Future Updates
+
+There are several potential improvements and extensions for this project:
+- **Improved Occlusion Handling**: Enhance the Kalman Filter or integrate additional algorithms to better manage cases where objects overlap or are partially hidden.
+- **Multi-Class Object Tracking**: Extend the tracking system to handle multiple object classes beyond squares and circles, with more sophisticated detection models.
+- **Performance Optimization**: Optimize the code for real-time performance, particularly when dealing with high-resolution video or multiple objects.
+- **Model Integration**: Integrate machine learning models for more robust object detection, which could improve accuracy in diverse and challenging environments.
+
+This project served as a valuable learning experience and a solid foundation for more advanced computer vision work in the future.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
+
+## Acknowledgements
+* Luxonis company for providing the opportunity and task
