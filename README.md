@@ -29,7 +29,7 @@ Ensure that the video file you want to process is named `luxonis_task_video.mp4`
 
 ### **2. Run the Script**
 ```bash
-python main.py
+python main6.py
 ```
 
 ### **3. Script Overview**
