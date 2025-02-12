@@ -92,8 +92,14 @@ There are several potential improvements and extensions for this project:
 
 This project served as a valuable learning experience and a solid foundation for more advanced computer vision work in the future.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
-
 ## Acknowledgements
 * Luxonis company for providing the opportunity and task
+
+## License
+The contents of the repository are licensed under a [MIT License][MIT].
+
+[![MIT License][MIT-shield]][MIT]
+
+[MIT]: https://opensource.org/license/mit
+[MIT-shield]: https://img.shields.io/badge/license-MIT-blue.svg
+
